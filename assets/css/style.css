@@ -150,6 +150,29 @@ body {
   opacity: 0;
 }
 
+.sidebar-link-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #67748e;
+}
+
+.sidebar-link-text p {
+  font-size: 14px;
+}
+
+.sidebar-link-text .arrow {
+  font-size: 12px;
+}
+
+.sidebar-link-text.active p {
+  font-weight: 500;
+  color: #344767;
+  font-size: 15px;
+}
+
 .sidebar.close .sidebar-link-text {
   transition-delay: 0.2s;
   opacity: 0;
@@ -248,6 +271,7 @@ body {
 .page-active {
   font-weight: 600 !important;
   opacity: 1 !important;
+  color: #344767;
 }
 
 .page-active:before {
@@ -267,7 +291,10 @@ body {
   color: #344767;
   border-radius: 4px;
   padding: 10px;
-  box-shadow: 0 -3px 13px -4px #0000000d, 0 8px 9px -5px #0000000d;
+}
+
+.bg-gradient.dashboard-icon {
+  color: #fff !important;
 }
 
 .side-doc {
