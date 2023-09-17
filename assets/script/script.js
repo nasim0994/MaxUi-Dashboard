@@ -114,10 +114,8 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Main sidebar toggle
-const sidebarToggleRightSideBtn = document.getElementById(
-  "sidebarToggle-rightSideBtn"
-);
+//---------- sidebar mini toggle
+const miniSidebarToggleBtn = document.getElementById("miniSidebarToggleBtn");
 const sidebar = document.getElementById("mainSidebar");
 const sideDocFooter = document.querySelector(".side-doc");
 
@@ -125,12 +123,6 @@ const sidebarToggle = () => {
   sidebar.classList.toggle("hover");
   sidebar.classList.toggle("close");
   sideDocFooter.classList.toggle("side-doc-mini");
-
-  if (sidebarToggleRightSideBtn.checked == false) {
-    sidebarToggleRightSideBtn.checked = true;
-  } else if (sidebarToggleRightSideBtn.checked == true) {
-    sidebarToggleRightSideBtn.checked = false;
-  }
 };
 
 // onmouseover="hoverSidebarToggle()"

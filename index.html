@@ -936,7 +936,7 @@
 
                     <!--Notification Dropdown -->
                     <div
-                      class="notification w-80 shadow bg-light dark:bg-dark p-2 rounded-lg absolute right-[-20px] top-10"
+                      class="notification dark:bg-dark"
                       id="notification-dropdown"
                     >
                       <ul>
@@ -1031,7 +1031,7 @@
         </header>
 
         <!-- info -->
-        <div class="lg:flex gap-8 pt-10">
+        <div class="lg:flex gap-8 pt-6">
           <div class="lg:w-[50%] z-50 relative">
             <h2 class="text-3xl font-bold text-title dark:text-light/80">
               General Statistics
@@ -1433,14 +1433,11 @@
       </section>
 
       <!------------- Right Side bar -------------->
-      <div
-        class="right-sidebar fixed bg-light dark:bg-dark top-0 right-0 w-[350px] h-[100%] z-[9999] p-6 shadow overflow-auto"
-        id="rightSidebar"
-      >
+      <div class="right-sidebar dark:bg-dark" id="rightSidebar">
         <div class="flex justify-between pb-6 border-b">
           <div>
             <h2 class="text-title dark:text-light text-xl font-semibold">
-              Soft UI Configurator
+              Max UI Configurator
             </h2>
             <p class="text-paragraph dark:text-light/80 text-base">
               See our dashboard options
@@ -1535,7 +1532,7 @@
               value=""
               class="sr-only peer"
               onclick="sidebarToggle()"
-              id="sidebarToggle-rightSideBtn"
+              id="miniSidebarToggleBtn"
             />
             <div
               class="w-11 h-6 bg-gray-200 outline-none peer-focus:ring-0 rounded-full peer-checked:after:translate-x-full peer-checked:after:border-white after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-title"
