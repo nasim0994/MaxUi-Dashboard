@@ -53,7 +53,7 @@ const rightSidebarClose = () => {
 document.addEventListener("click", (e) => {
   if (
     !e.target.closest(".right-sidebar") &&
-    !e.target.closest(".rightSidebarShow-btn")
+    !e.target.closest(".rightSidebar_btn")
   ) {
     rightSidebar.classList.remove("right-sidebar-show");
   }
